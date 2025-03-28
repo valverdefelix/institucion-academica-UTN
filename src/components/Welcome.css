@@ -1,0 +1,71 @@
+/* Contenedor principal */
+.welcome-container {
+  height: 100vh; /* Ocupar toda la pantalla */
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../../public/images/background.jpg') no-repeat center center/cover;
+}
+
+/* Caja con el contenido */
+.wrapper {
+  width: 90%;
+  max-width: 500px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.7); /* Más oscuro para mayor contraste */
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espaciado entre elementos */
+}
+
+/* Título */
+.welcome-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+/* Texto */
+.welcome-text {
+  font-size: 1.2rem;
+  max-width: 90%;
+  text-align: center;
+  color: white;
+}
+
+/* Contenedor de botones */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Botones */
+.welcome-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  width: 80%;
+  max-width: 300px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}

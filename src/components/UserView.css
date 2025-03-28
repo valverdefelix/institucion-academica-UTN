@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('../../public/images/background.jpg');
+  background-size: cover; /* Asegura que la imagen cubra la pantalla */
+  background-position: center; /* Mantiene la imagen centrada */
+  background-repeat: no-repeat; /* Evita la repetición */
+  background-attachment: fixed; /* Mantiene la imagen fija al cambiar de contenido */
+}
+
+h1 {
+  text-align: center;
+  color: #f8f6f6;
+}
+
+/* Centrar los títulos h3 */
+h3 {
+  text-align: center;
+  color: #333;
+}
+
+.personal-info, .survey-form {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  background: #28a745;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #218838;
+}
+
+.survey-form {
+  display: none;
+}
+
+.show-survey {
+  display: block;
+}
+
+/* Asegurar que el contenido del formulario no afecte la imagen de fondo */
+.container {
+  position: relative;
+  z-index: 2; /* Mantiene los formularios sobre la imagen sin afectarla */
+}
